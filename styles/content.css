@@ -1,0 +1,25 @@
+.text-tooltip {
+  border-bottom: dotted 1px #333;
+  position: relative;
+}
+
+.tooltip-content {
+  opacity: 0;
+  visibility: hidden;
+  font-size: 70%;
+  white-space: nowrap;
+  border-radius: 5px;
+  background-color: #555;
+  color: #fff;
+  padding: 5px 10px;
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.6s ease-in-out;
+}
+
+.text-tooltip:hover .tooltip-content {
+  opacity: 1;
+  visibility: visible;
+}
